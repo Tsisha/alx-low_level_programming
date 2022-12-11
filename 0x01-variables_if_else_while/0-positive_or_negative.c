@@ -3,9 +3,8 @@
 #include <stdio.h>
 /* more headers goes there */
 /**
- * main - Entry point
- * Description - Prints if random generated number is +tive, zero or -tive
- * Return: Always 0 (success)
+ * main - prints if the number is positive ,negative or 0
+ * Return: Always 0
  */
 int main(void)
 {
