@@ -10,10 +10,10 @@ int tens;
 int ones;
 for (tens = 0; tens <= 9; tens++)
 {
-for (onse = tens + 1; onse <= 9; onse++)
+for (ones = tens + 1; ones <= 9; ones++)
 {
 putchar(tens + '0');
-putchar(onse + '0');
+putchar(ones + '0');
 if (tens < 8)
 {
 putchar(',');
