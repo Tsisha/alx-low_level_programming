@@ -2,10 +2,10 @@
 /**
  * print_alphabet - print all alphabet in lowercase
  */
-void print_alphabet(void);
-for (int x = 'A'; x <= 'Z'; x++)
+void print_alphabet(void)
 {
-int lower_x = tolower(x);
-_putchar (lower_x);
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
+_putchar (letter);
 _putchar ('\n');
 }
