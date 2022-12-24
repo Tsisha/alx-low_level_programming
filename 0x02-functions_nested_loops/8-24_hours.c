@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * jack_baure - prints every minute of the day, 24 hour clock
+ *main - prints every minute of the day, 24 hour clock
  * h = houre, m = minute
  * Return: 24 hour clock line by line
  */
-void jack_baure(void)
+void jack_bauer(void)
 {
 int hour, minute;
 for (hour = 0; hour <= 23; hour++)
