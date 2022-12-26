@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Prints the first 52 fibonacci numbers
- *
+ * main - finds and prints the sum of the even-valued terms
+ *less than 4000000.
  * Return: Nothing!
  */
 int main(void)
@@ -14,7 +14,7 @@ k += j;
 if (k % 2 == 0)
 sum += k;
 j = k - j;
-+i;
+++i;
 }
 printf("%ld\n", sum);	;
 return (0);
