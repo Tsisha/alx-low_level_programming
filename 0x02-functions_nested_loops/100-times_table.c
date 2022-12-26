@@ -9,15 +9,15 @@ void times_table(int n)
 int x, y, z;
 if (n >= 0 && n <= 14)
 {
-for(x = 0; x <= n; x++)
+for (x = 0; x <= n; x++)
 {
 _putchar('0');
-for(y = 1; y <= n; y++)
+for (y = 1; y <= n; y++)
 {
 _putchar(',');
 _putchar(' ');
 z = x * y;
-if(z <= n)
+if (z <= n)
 _putchar(' ');
 else
 _putchar((z / 10) + '0');
