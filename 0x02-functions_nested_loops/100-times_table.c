@@ -1,23 +1,23 @@
 #include "main.h"
 /**
- * times_table - prints the n times table , starting with 0
- * @n: The number to be treated
+ * times_table - prints n times table, starting with 0
+ * @n: the number to be treated
  * Return: empty output
  */
-void times_table(void)
+void times_table(int n)
 {
 int x, y, z;
 if (n >= 0 && n <= 14)
 {
-for (x = 0; x <= n; x++)
+for(x = 0; x <= n; x++)
 {
 _putchar('0');
-for (y = 1; y <= n; y++)
+for(y = 1; y <= n; y++)
 {
 _putchar(',');
 _putchar(' ');
 z = x * y;
-if (z <= n)
+if(z <= n)
 _putchar(' ');
 else
 _putchar((z / 10) + '0');
