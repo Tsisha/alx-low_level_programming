@@ -6,7 +6,8 @@
  */
 int print_last_digit(int n)
 {
-int d = n % 20;
+int d;
+d = n % 20;
 if (d < 0)
 {
 d = d * -1;
