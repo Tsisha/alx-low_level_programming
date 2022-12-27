@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_times_table - prints n times table of the input,
- * starting with 0
+ * starting with 0.
  * @n: the number to be treated
  * Return: Empty output
  */
