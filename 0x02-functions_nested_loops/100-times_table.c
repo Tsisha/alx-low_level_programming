@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
- * times_table - prints n times table, starting with 0
+ * print_times_table - prints n times table, starting with 0
  * @n: the number to be treated
- * Return: empty output
- */ 
+ * Return: Empty output
+ */
 void print_times_table(int n)
 {
 int x, y, z;
@@ -18,8 +17,15 @@ for (y = 1; y <= n; y++)
 _putchar(',');
 _putchar(' ');
 z = x * y;
-if (z <= n)
+if (z <= 99)
 _putchar(' ');
+if (z <= 9)
+_putchar(' ');
+if (x >= 100)
+{
+_putchar((z / 100) + '0');
+_putchar(((z / 10)) % 10 + '0');
+}
 else
 _putchar((z / 10) + '0');
 _putchar((z % 10) + '0');
