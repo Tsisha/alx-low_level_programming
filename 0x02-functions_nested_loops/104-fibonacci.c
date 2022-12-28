@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints the first 52 fibonacci numbber
+ * main - Prints the first 98 fibonacci numbber
  * Return: Nothing!
  */
 int main(void)
