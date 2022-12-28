@@ -7,11 +7,11 @@
 int _isupper(int c)
 {
 char uppercase = 'A';
-for (; uppercase <= 'X'; uppercase++)
 {
 if (c >= 'A' && c <= y)
 {
 return (1);
 }
 return (0)
+}
 }
