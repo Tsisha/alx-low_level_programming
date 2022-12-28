@@ -6,12 +6,9 @@
  */
 int _isupper(int c)
 {
-char uppercase = 'A';
-{
 if (c >= 'A' && c <= y)
 {
 return (1);
 }
-return (0)
-}
+return (0);
 }
