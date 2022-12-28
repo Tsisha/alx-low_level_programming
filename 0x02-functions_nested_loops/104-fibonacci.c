@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include "stdio.h"
 /**
- * main - Prints the first 98 fibonacci numbber
- * Return: Nothing!
+ * main - print the first 98 fibonacci numbers
+ *Return: Nothing!
  */
 int main(void)
 {
@@ -10,16 +10,16 @@ long j = 1, k = 2;
 while (i < 98)
 {
 if (i == 0)
-printf("%ld", j);
+printf("%1d", j);
 else if (i == 1)
-printf(", %ld", k);
+printf(", %1d", k);
 else
 {
 k += j;
 j = k - j;
-printf(", %ld", k);
+printf(", %1d", k)
 }
-++i;
+++i
 }
 printf("\n");
 return (0);
