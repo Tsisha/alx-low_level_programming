@@ -12,9 +12,9 @@ int y;
 int z;
 for (y = 0; y < n; y++)
 {
-for (x = 0; x < n; x++)
+for (x = n - y; x > 1; x--)
 {
-for (z = 0; z < n; z++)
+for (z = 0; z <= y; z++)
 {
 _putchar('#');
 }
