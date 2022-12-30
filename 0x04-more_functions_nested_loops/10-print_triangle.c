@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_triangle - prints a triangel, followed by a new line
  * @n: the number of lines using '#' to print a triangle
