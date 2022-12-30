@@ -12,7 +12,8 @@ if (n <= 0)
 _putchar('\n');
 } else
 {
-int x, y;
+int x;
+int y;
 for (y = 1; y <= n; y++)
 {
 for (x = y; x < n; x++)
