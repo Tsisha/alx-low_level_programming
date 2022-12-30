@@ -9,12 +9,13 @@ void print_triangle(int n)
 {
 int x;
 int y;
-int z;
-for (y = 0; y < n; y++)
+for (y = 1; y <= n; y++)
 {
-for (x = n - y; x > 1; x--)
+for (x = 1; x < n; x++)
 {
-for (z = 0; z <= y; z++)
+_putchar(' ');
+}
+for (x = 1; x <= y; x++)
 {
 _putchar('#');
 }
@@ -23,6 +24,5 @@ _putchar('\n');
 if (n <= 0)
 {
 _putchar('\n');
-}
 }
 }
