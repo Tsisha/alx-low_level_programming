@@ -9,14 +9,14 @@ void print_triangle(int n)
 {
 if (n <= 0)
 {
-putchar('\n');
+_putchar('\n');
 } else
 {
 int x;
 int y;
 for (y = 1; y <= n; y++)
 {
-for (x = 1; x < n; x++)
+for (x = y; x < n; x++)
 {
 _putchar(' ');
 }
