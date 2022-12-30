@@ -2,24 +2,24 @@
 #include <stdio.h>
 /**
  * print_number - prints an integer
- * @x: integer to print
+ * y: integer to print
  * Return: Nothing!
  */
-void print_number(int x)
+void print_number(int y)
 {
-unsigned int x1 = 0;
-if (x < 0)
+unsigned int y1 = 0;
+if (y < 0)
 {
-x1 = -x;
+y1 = -y;
 _putchar('_');
 }
 else
 {
-x1 = x;
+y1 = y
 }
-if (x1 / 10)
+if (y1 / 10)
 {
-print_number(x1 / 10);
+print_number(y1 / 10);
 }
-_putchar((x1 % 10) + '0');
+_putchar((y1 % 10) + '0');
 }
