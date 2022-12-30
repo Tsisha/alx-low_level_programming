@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_number - prints an integer
- * y: integer to print
+ * @y: integer to print
  * Return: Nothing!
  */
 void print_number(int y)
@@ -15,7 +15,7 @@ _putchar('_');
 }
 else
 {
-y1 = y
+y1 = y;
 }
 if (y1 / 10)
 {
