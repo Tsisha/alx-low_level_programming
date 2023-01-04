@@ -3,15 +3,15 @@
  * _memset - fills the memory with constant byte
  * @s: the memory area
  * @b: the character to fill the memory area
- * @n: the number of bytes
+ * @n: index
  * Return: *s
  */
-char _memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-insigned int index;
-for (index = 0; index < 1; index++)
+unsigned int i;
+for (i = 0; i < n; i++)
 {
-s(index) = b;
+s[i] = b;
 }
-return (s)
+return (s);
 }
