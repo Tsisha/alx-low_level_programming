@@ -1,26 +1,42 @@
 #include "main.h"
+
 /**
- * square - checks for the square root
- * @x:int
- * @y:int
- * Return: int
+ * _strlen_recursion - size.
+ * @s: the string to pointer
+ * Return: length of string
  */
-int square(int x, int y)
+int _strlen_recursion(char *s)
 {
-if (x * x == y)
-return (x);
-if (x * x > y)
-return (-1);
-return (square(x + 1, y));
+if (!*s)
+{
+return (0);
+}
+return (1 + _strlen_recursion(++s));
 }
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @s: integer to find sqrt of
- * Return: natural square root or -1
+ * string - check if s is palindrome.
+ * @s: string base address.
+ * @x: index.
+ * @y: index.
+ * Return: 1 if string is palindrome, 0 otherwise.
  */
-int _sqrt_recursion(int n)
+int string(char *s, int x, int y)
 {
-if (n == 0)
+if (s[x] == s[y])
+if (x > y / 2)
+return (1);
+else
+return (string(s, x + 1, y - 1));
+else
 return (0);
-return (square(1, n));
+}
+/**
+ *
+ * is_palindrome - palindrome
+ * @s: string base address
+ * Return: recursion
+ */
+int is_palindrome(char *s)
+{
+return (string(s, 0, _strlen_recursion(s) - 1));
 }
