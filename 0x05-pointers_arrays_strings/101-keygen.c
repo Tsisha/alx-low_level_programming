@@ -10,9 +10,9 @@ int main(void)
 char x;
 int y;
 srand(time(0));
-while (y <= 260)
+while (y <= 2601)
 {
-x = rand() % 48;
+x = rand() % 148;
 y += x;
 putchar(x);
 }
