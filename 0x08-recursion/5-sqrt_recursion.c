@@ -1,17 +1,17 @@
 #include "main.h"
  /**
-  * _sqrt - checks for square roots
+  * prime - checks for square roots
   * @y: int
   * @x: int
   * Return: int
   */
-int _sqrt(int y, int x)
+int prime(int y, int x)
 {
 if ((x * x) == y)
 return (x);
 if ((x * x) > y)
 return (-1);
-return (_sqrt(y, x + 1));
+return (prime(y, x + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root
@@ -20,5 +20,5 @@ return (_sqrt(y, x + 1));
  */
 int _sqrt_recursion(int n)
 {
-return (_sqrt(n, 1));
+return (prime(n, 1));
 }
