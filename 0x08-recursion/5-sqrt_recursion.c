@@ -1,13 +1,4 @@
 #include "main.h"
-/**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: the number to find square root off
- * Return: the square root of a number
- */
-int _sqrt_recursion(int n)
-{
-return (_sqrt(n, 1));
-}
  /**
   * _sqrt - _sqrt_recursion
   * @n: the number to find suare root of
@@ -21,4 +12,13 @@ return (x);
 if ((x * x) > n)
 return (-1);
 return (_sqrt(n, x + 1));
+}
+/**
+ * _sqrt_recursion - returns the natural square root 
+ * @n: the number to find
+ * Return: the square root
+ */
+int _sqrt_recursion(int n)
+{
+return (_sqrt(n, 1));
 }
