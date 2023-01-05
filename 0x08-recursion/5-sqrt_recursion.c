@@ -1,24 +1,24 @@
 #include "main.h"
  /**
-  * check - checks for square roots
-  * @n: the number to find suare root of
-  * @x: the resulting number
-  * Return: sqrt
+  * _sqrt - checks for square roots
+  * @y: int
+  * @x: int
+  * Return: int
   */
-int check(int n, int x)
+int _sqrt(int y, int x)
 {
-if ((x * x) == n)
+if ((x * x) == y)
 return (x);
-if ((x * x) > n)
+if ((x * x) > y)
 return (-1);
-return (check(n, x + 1));
+return (_sqrt(y, x + 1));
 }
 /**
  * _sqrt_recursion - returns the natural square root
  * @n: the number to find
- * Return: the square root
+ * Return: the square root or -1
  */
 int _sqrt_recursion(int n)
 {
-return (check(n, 1));
+return (_sqrt(n, 1));
 }
