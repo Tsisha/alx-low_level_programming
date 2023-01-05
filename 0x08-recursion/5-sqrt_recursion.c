@@ -9,10 +9,10 @@ int _sqrt_recursion(int n)
 return (_sqrt(n, 1));
 }
  /**
-  * _sqrt - square root
+  * _sqrt - _sqrt_recursion
   * @n: the number to find suare root of
   * @x: the resulting number
-  * Return: a number
+  * Return: sqrt
   */
 int _sqrt(int n, int x)
 {
