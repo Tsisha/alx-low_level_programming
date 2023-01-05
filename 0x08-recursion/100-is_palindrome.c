@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strlen_recursion - size.
  * @s: the string to pointer
@@ -31,7 +30,6 @@ else
 return (0);
 }
 /**
- *
  * is_palindrome - palindrome
  * @s: string base address
  * Return: recursion
