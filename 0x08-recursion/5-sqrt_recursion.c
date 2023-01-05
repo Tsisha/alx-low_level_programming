@@ -14,7 +14,7 @@ return (-1);
 return (_sqrt(n, x + 1));
 }
 /**
- * _sqrt_recursion - returns the natural square root 
+ * _sqrt_recursion - returns the natural square root
  * @n: the number to find
  * Return: the square root
  */
