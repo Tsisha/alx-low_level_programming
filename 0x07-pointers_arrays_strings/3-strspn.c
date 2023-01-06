@@ -13,7 +13,7 @@ while (*s)
 {
 for (x = 0; accept[x]; x++)
 {
-if (accept[x]== *s)
+if (accept[x] == *s)
 {
 bytes++;
 break;
