@@ -22,7 +22,7 @@ else if (s2[x] == '\0')
 diff = s1[x];
 break;
 }
-else if (s1[i] != s2[x])
+else if (s1[x] != s2[x])
 {
 diff = s1[x] - s2[x];
 break;
