@@ -30,7 +30,7 @@ if (argc != 2)
 {
 printf("Error\n");
 return (1);
-{
+}
 if (isInteger(argv[1]))
 {
 x = atoi(argv[1]);
@@ -49,6 +49,4 @@ coin++;
 }
 printf("%i\n", coinUsed);
 return (0);
-}
-}
 }
