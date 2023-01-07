@@ -47,7 +47,7 @@ coin++;
 }
 }
 }
-printf("%x\n", coinUsed);
+printf("%i\n", coinUsed);
 return (0);
 }
 }
