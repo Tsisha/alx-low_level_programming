@@ -19,7 +19,7 @@ while (av[y][a] != '\0')
 x++;
 a++;
 }
-y++
+y++;
 }
 x = x + ac + 1;
 z = malloc(sizeof(char) * x);
