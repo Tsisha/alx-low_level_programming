@@ -21,7 +21,7 @@ if (x == NULL)
 return (NULL);
 len = 0;
 for (index = 0; s1[index]; index++)
-concat[len++] = s1[index];
+x[len++] = s1[index];
 for (index = 0; s2[index] && index < n; index++)
 x[len++] = s2[index];
 x[len] = '\0';
