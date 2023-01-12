@@ -8,31 +8,26 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-void *x;
+void *x, *z;
 unsigned int y;
-if (ptr == NULL)
-{
-x = malloc(new_size);
-return (x);
-}
-else if (new_size == old_size)
+if (ptr != NULL)
+x = ptr;
+else
+{ return (malloc(new_size)); }
+if (new_size == old_size)
 return (ptr);
-else if (new_size == 0 && ptr != NULL)
+if (new_size == 0 && ptr != NULL)
 {
 free(ptr);
-return (NULL);
+return (0);
 }
-else
+z = malloc(new_size);
+if (z != NULL)
+return (0);
+for (y = 0; y < (old_size || i < new_size); y++)
 {
-x = malloc(new_size);
-if (x != NULL)
-{
-for (y = 0; y < min(old_size, new_size); y++)
-*((char *)x + y) = *((char *) ptr + y);
+*(z + y) = x(y);
+}
 free(ptr);
-return (x);
-}
-else
-return (NULL);
-}
+return (z);
 }
