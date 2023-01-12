@@ -8,10 +8,10 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-void *x, *z;
+void *z;
 unsigned int y;
 if (ptr != NULL)
-x = ptr;
+z = ptr;
 else
 { return (malloc(new_size)); }
 if (new_size == old_size)
@@ -24,9 +24,9 @@ return (0);
 z = malloc(new_size);
 if (z != NULL)
 return (0);
-for (y = 0; y < (old_size || i < new_size); y++)
+for (y = 0; y < (old_size || y < new_size); y++)
 {
-*(z + y) = x(y);
+*((char *)z + y) = *((char *) ptr + y);
 }
 free(ptr);
 return (z);
